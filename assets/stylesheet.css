@@ -22,30 +22,6 @@ header {
     text-decoration: none;
   }
   
-  /* .flex-container {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    padding-left: 5px;
-    font-size: x-large;
-    float: left;
-    color: whitesmoke;
-    background-color: slategray;
-    flex-wrap: wrap;
-
-  } */
-
-  .row-para {
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    /* width: 100%; */
-    padding-left: 50px;
-    font-size: 15px;
-    color: slategray;
-    /* flex-wrap: wrap; */
-
-  }
 
   #banner {
     width: 100%;
@@ -67,7 +43,7 @@ header {
     
   }
 
-   #aboutme  {
+   .aboutme  {
     font-size: 25px;
     color: slategray;
     display: flex;
@@ -77,45 +53,55 @@ header {
 
   }
 
-  #para-box {
+  .row-para {
     display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 50px;
+    font-size: 15px;
+    color: slategray;
     flex-direction: column;
     justify-content: center;
+    border-left: 3px solid black;
+
   }
+
 
   .section {
-    display: flex;
-    /* flex-direction: column; */
-    /* margin-left: 10px;
-    margin-top: 50px; */
+    width: 100%;
   }
 
-  .h2box {
-    display: inline-flex;
-    flex-direction: column;
-    
-    width: 500px;
-    border-right: 5px solid;
-  }
 
   .row-title {
-    /* border-right: 5px solid; */
-    max-width: 250px;
+    width: 25%;
     padding: 50px 100px;
-    /* flex-wrap: wrap; */
+    font-size: 50px;
   }
   
-  .sectioncontainer {
+  .sectionContainer {
     margin-left: 50px;
     margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    /* flex-direction: column; */
     
   }
 
-  #work-title {
-    font-size: 50px;
+
+@media screen and (max-width:375px) {
+  .sectioncontainer {
+    flex-wrap: wrap;
+
   }
 
+  .row-title {
+    width: 100%;
+
+  }
+  .row-para { 
+    width:100%;
+
+  }
+
+}
